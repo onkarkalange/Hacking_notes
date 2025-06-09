@@ -1,0 +1,1 @@
+1.No XSS is triggered in the API when the request is not processed by a Node.js API. In a regular API, if you send a JavaScript payload, it does not get executed in the browser. Although the payload may be processed by the backend, you won’t see any output or execution in the frontend, since it’s not reflected in a rendered web page.
