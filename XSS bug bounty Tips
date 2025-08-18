@@ -1,0 +1,17 @@
+---->**Manual XSS Payload Building**------>:
+Find an input field and enter a normal test string. Search the rendered page to see where that input is reflected. Then open the page source and search for the same input to see its exact context. Balance (escape/close) your payload based on that context before injecting.
+If you want it as steps:
+1. Identify an input field and submit a benign marker, e.g., `xsstest123`.
+2. Check the rendered page for any reflections of `xsstest123`.
+3. View Page Source (or use DevTools) and locate `xsstest123` to determine the context:
+   * HTML text node, HTML attribute, JavaScript string, URL/query, or inside a `<script>` block.
+4. “Balance” your payload to break out of that context:
+   * Close tags (`</tag>`), close quotes (`"`, `'`), or end JS strings as needed.
+5. Inject a minimal context-safe probe, then escalate if reflected unsafely:
+   * HTML text: `</p><svg onload=alert(1)>`
+   * HTML attribute: `" onmouseover=alert(1) x="`
+   * JS string: `';alert(1);//` or `");alert(1);//`
+   * URL context: `javascript:alert(1)`
+6. Confirm execution, then document payload, location, and context.
+
+----->
