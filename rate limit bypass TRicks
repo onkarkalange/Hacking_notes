@@ -1,0 +1,30 @@
+Rate Limit Bypass Tricks -1 header Examples
+X-Originating-IP: 127.0.0.1
+X-Remote-IP: 127.0.0.1
+X-Remote-Addr: 127.0.0.1
+X-Client-IP: 127.0.0.1
+X-Host: 127.0.0.1
+X-Forwarded-Host: 127.0.0.1
+
+
+Rate Limit Bypass Tricks-2
+
+1)Changing Path / Encoding Variations
+Modify endpoint path casing or encoding, add null character:
+
+/api/v4/EndPoint  
+/api/v4/endpoint%00  
+/api/v4/endpoint%01  
+/api/v4/endpoint%0A
+Exploits weak path normalization in servers.
+Using Different Endpoints / Platforms
+
+2)Web app endpoint may enforce rate limit, but:
+Mobile API may not.
+Alternate API versions (/v1/, /v2/) may skip checks.
+
+3)Cycling Between Accounts (race condition)
+Alternate requests between:
+Valid account (normal login)
+Invalid account (attack target)
+Helps evade IP/account-based throttling..
