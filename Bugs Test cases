@@ -1,0 +1,9 @@
+Arbitrary URL Injection via Link Input Field | Bug Bounty Writeup
+While testing the registration flow, I found that the platform’s LinkedIn profile input field  i.e (can we connect on social media)only had client-side checks for linkedin.com. By intercepting the request and replacing it with a malicious tracking URL, the server accepted it without validation.
+This allowed me to inject arbitrary URLs, which could be used for phishing, redirection, or data harvesting (e.g., IP, device details). The issue demonstrated weak server-side validation and potential abuse of trust in user profile links. Use to tool  iplogger.org/tracking-pixel/ ?
+IPLogger Tracking Pixel is a service that provides an invisible image (1×1 pixel) which, when loaded on a webpage or email, collects information like IP address, location, device, and browser details of the visitor. It’s commonly used for tracking but can also be abused in security testing to demonstrate data leaksOpen in app
+After completing the registration process, I visited my public profile and observed that the injected IPLogger tracking URL was successfully reflected in place of the LinkedIn link.
+Press enter or click to view image in full size
+After this, whenever a victim clicks on my LinkedIn profile link, they are redirected to the tracking URL instead of the legitimate LinkedIn page.
+Press enter or click to view image in full size
+…and I will receive the victim’s PII details such as IP address, device, and browser information through the tracking service..
