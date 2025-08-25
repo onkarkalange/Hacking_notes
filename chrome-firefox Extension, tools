@@ -1,0 +1,45 @@
+Firefox and Chrome Extensions:
+a. S3 Bucket Scanner (https://chromewebstore.google.com/detail/s3bucketlist/anngjobjhcbancaaogmlcffohpmcniki?hl=en)
+b. DotGit (https://chromewebstore.google.com/detail/dotgit/pampamgoihgcedonnphgehgondkhikel?hl=en)
+c. Shodan (https://chromewebstore.google.com/detail/shodan/jjalcfnidlmpjhdfepjhjbhnhkbgleap)
+d. Wappalyzer
+e. User Agent Switcher (https://chromewebstore.google.com/detail/user-agent-switcher-for-c/djflhoibgkdhkhhcedjiklpkjnoahfmg)
+f. Cookie Editor
+g. Google Translate
+f. KNOXSS (https://addons.mozilla.org/en-US/firefox/addon/knoxss-community-edition/)
+g. PwnFox (https://addons.mozilla.org/en-US/firefox/addon/pwnfox/)
+h. Broken Link Checker (https://addons.mozilla.org/en-US/firefox/addon/find-broken-links/)
+g. Open Multiple URLs (https://chromewebstore.google.com/detail/open-multiple-urls/oifijhaokejakekmnjmphonojcfkpbbh?hl=en)
+ 
+Tools (Github):
+a. Truffle Hog (Python File Integrate with Burp or Use Independently)
+b. Gau, WaybackURL's and Katana
+c. SQLMap and Ghauri (Please don't rely just on SQL Map, please make use of Ghauri also. Have found multiple cases where Ghauri has given better output)
+d. Linkfinder and Secrets Finder
+ 
+Burp Extension:
+a. BurpJSLinkFinder
+b. Trufflehog
+c. JSMIner
+d. 403Bypaaser
+e. ActiveScan++
+f. Add Custom Header
+g. Collaborator Everywhere
+h. Autorize
+i. ParamMiner
+j. JSON Decoder
+k. IIS Tilde Enumeration Scanner
+l. HTTP Request Smuggler
+m. GraphQL Raider
+n. Java Deserialization Scanner
+o. JSpector
+ 
+VA:
+1. OWASP ZAP
+2. Vega or Arachni Scanner
+3. Nuclei
+4. Dirsearch
+5. FFUF
+6. Nmap
+7. Burp Scan
+ 
