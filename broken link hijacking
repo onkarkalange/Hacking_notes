@@ -1,3 +1,4 @@
 broken link hijacking tool:https://github.com/stevenvachon/broken-link-checker.git
 Command: blc -rof --filter-level 3 https://domain-name
 -- If we take over the subdomain then we can serve malicious content to broken link on that subdomain
+website for broken link check:https://www.deadlinkchecker.com/
